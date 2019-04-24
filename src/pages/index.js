@@ -9,9 +9,9 @@ const IndexPage = () => (
   <>
     <Header />
     <Hero />
-    <About />
-    <Work />
-    <Contact />
+    <About name="about"/>
+    <Work name="work"/>
+    <Contact name="contact"/>
   </>
 )
 
