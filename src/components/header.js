@@ -4,19 +4,37 @@ import { Link, animateScroll as scroll } from "react-scroll"
 class Header extends Component {
     render() {
         return (
-            <div>
+            <div id="Header">
                 <Link 
-                    to="about"
+                    to="About"
                     activeClass="active"
                     spy={true}
                     smooth={true}
                     offset={-70}
                     duration={500} 
                 >
-                    About
+                    About 
                 </Link> 
-                Work
-                Contact
+                <Link 
+                    to="Work"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500} 
+                >
+                    Work
+                </Link> 
+                <Link 
+                    to="Contact"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500} 
+                >
+                    Contact 
+                </Link> 
             </div>
         );
     }

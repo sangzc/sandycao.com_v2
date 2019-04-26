@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Work extends Component {
     render() {
         return (
-            <div>
+            <div id="Work">
                 <h2>Work</h2>
                 This is my work.
                 <br />
