@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { Link, animateScroll as scroll } from "react-scroll"
+import styled from 'styled-components';
+
+const HeaderLinkStyle = styled.div`
+    color: white
+    
+`
 
 class Header extends Component {
     render() {
         return (
-            <div id="Header">
+            <HeaderLinkStyle>
                 <Link 
                     to="About"
                     activeClass="active"
@@ -35,7 +41,7 @@ class Header extends Component {
                 >
                     Contact 
                 </Link> 
-            </div>
+            </HeaderLinkStyle>
         );
     }
 }
