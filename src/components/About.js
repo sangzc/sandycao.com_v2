@@ -5,7 +5,11 @@ class About extends Component {
         return (
             <div id="About">
                 <h2>About Me</h2>
-                <img style={{width: 500}} src="https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2017/08/girlgoneabroad.jpg"/>
+                <img 
+                    style={{width: 500}} 
+                    src="https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2017/08/girlgoneabroad.jpg"
+                    alt=""
+                />
             </div>
         );
     }

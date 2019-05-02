@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll";
 import styled from 'styled-components';
 
 const HeaderLinkStyle = styled.div`
-    color: white
-    
+    color: white;
+    position: absolute;
+    top: 50%;
+    right: -60px;
+    transform: translate(-50%, -50%);
+    a {
+        padding: 15px;
+    }
 `
 
 class Header extends Component {

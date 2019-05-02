@@ -8,8 +8,9 @@ import styled from 'styled-components';
 
 const HeaderStyle = styled.div`
     background-color: blue;
-    height: 100%;
-    width: 50vw;
+    height: 70px;
+    width: 100vw;
+    position: relative;
 `
 
 const IndexPage = () => (
