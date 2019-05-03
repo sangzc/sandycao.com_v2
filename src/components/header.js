@@ -13,41 +13,50 @@ const HeaderLinkStyle = styled.div`
     }
 `
 
+const HeaderStyle = styled.div`
+    background-color: #747FE0;
+    height: 70px;
+    width: 100vw;
+    position: relative;
+`
+
 class Header extends Component {
     render() {
         return (
-            <HeaderLinkStyle>
-                <Link 
-                    to="About"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500} 
-                >
-                    About 
-                </Link> 
-                <Link 
-                    to="Work"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500} 
-                >
-                    Work
-                </Link> 
-                <Link 
-                    to="Contact"
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500} 
-                >
-                    Contact 
-                </Link> 
-            </HeaderLinkStyle>
+            <HeaderStyle>
+                <HeaderLinkStyle>
+                    <Link 
+                        to="About"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500} 
+                    >
+                        About 
+                    </Link> 
+                    <Link 
+                        to="Work"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500} 
+                    >
+                        Work
+                    </Link> 
+                    <Link 
+                        to="Contact"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500} 
+                    >
+                        Contact 
+                    </Link> 
+                </HeaderLinkStyle>
+            </HeaderStyle>
         );
     }
 }

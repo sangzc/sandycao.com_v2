@@ -4,23 +4,13 @@ import Hero from "../components/Hero"
 import About from "../components/About"
 import Work from "../components/Work"
 import Contact from "../components/Contact"
-import styled from 'styled-components';
-
-const HeaderStyle = styled.div`
-    background-color: blue;
-    height: 70px;
-    width: 100vw;
-    position: relative;
-`
 
 const IndexPage = () => (
   <>
-    <HeaderStyle>
-      <Header />
-    </HeaderStyle>
+    <Header />
     <Hero />
-    <About name="about"/>
     <Work name="work"/>
+    <About name="about"/>
     <Contact name="contact"/>
   </>
 )
