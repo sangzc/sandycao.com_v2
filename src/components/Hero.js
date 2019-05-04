@@ -11,6 +11,11 @@ const HeroStyle = styled.div`
         position: absolute;
         top: 30%;
         left: 10%;
+        border-top: 10px solid white;
+        border-right: 10px solid white;
+        border-left: 10px solid white;
+        border-bottom: 50px solid white;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
 
     p {

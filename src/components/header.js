@@ -14,7 +14,7 @@ const HeaderLinkStyle = styled.div`
 `
 
 const HeaderStyle = styled.div`
-    background-color: #747FE0;
+    background-color: #cccee0;
     height: 70px;
     width: 100vw;
     position: relative;
