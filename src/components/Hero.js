@@ -7,23 +7,24 @@ const HeroStyle = styled.div`
     position: relative;
 
     img {
-        max-width: 300px;
+        max-width: 350px;
         position: absolute;
-        top: 30%;
+        top: 20%;
         left: 10%;
         border-top: 10px solid white;
         border-right: 10px solid white;
         border-left: 10px solid white;
-        border-bottom: 50px solid white;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        border-bottom: 80px solid white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     p {
         position: absolute;
-        top: 53%;
+        top: 50%;
         left: 45%;
         max-width: 400px;
         font-size: 16px;
+        line-height: 28px;
     }
 `
 const TypeWriter = styled.div`
@@ -48,7 +49,7 @@ const TypeWriter = styled.div`
     h1 {
         font-family: monospace;
         position: absolute;
-        top: 45%;
+        top: 40%;
         left: 45%;
         display: inline-block;
         overflow: hidden;
@@ -61,6 +62,7 @@ const TypeWriter = styled.div`
         box-sizing: border-box;
         letter-spacing: normal;
     }
+
 `
 
 class Hero extends Component {

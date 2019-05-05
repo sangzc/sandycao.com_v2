@@ -12,11 +12,6 @@ class About extends Component {
         return (
             <AboutMeStyle className="About">
                 <h2>About Me</h2>
-                <img 
-                    style={{width: 500}} 
-                    src="https://cms.hostelworld.com/hwblog/wp-content/uploads/sites/2/2017/08/girlgoneabroad.jpg"
-                    alt=""
-                />
             </AboutMeStyle>
         );
     }

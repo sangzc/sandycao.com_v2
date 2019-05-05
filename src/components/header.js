@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const HeaderLinkStyle = styled.div`
     color: white;
+    font-family: monospace;
     position: absolute;
     top: 50%;
     right: -60px;
@@ -33,7 +34,7 @@ class Header extends Component {
                         offset={-70}
                         duration={500} 
                     >
-                        About 
+                        About. 
                     </Link> 
                     <Link 
                         to="Work"
@@ -43,7 +44,7 @@ class Header extends Component {
                         offset={-70}
                         duration={500} 
                     >
-                        Work
+                        Work.
                     </Link> 
                     <Link 
                         to="Contact"
@@ -53,7 +54,7 @@ class Header extends Component {
                         offset={-70}
                         duration={500} 
                     >
-                        Contact 
+                        Contact. 
                     </Link> 
                 </HeaderLinkStyle>
             </HeaderStyle>
