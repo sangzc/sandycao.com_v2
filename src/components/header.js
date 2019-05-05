@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import styled from 'styled-components';
 
 const HeaderLinkStyle = styled.div`
-    color: white;
     font-family: monospace;
     position: absolute;
     top: 50%;
@@ -15,7 +14,7 @@ const HeaderLinkStyle = styled.div`
 `
 
 const HeaderStyle = styled.div`
-    background-color: #cccee0;
+    background-color: transparent;
     height: 70px;
     width: 100vw;
     position: relative;

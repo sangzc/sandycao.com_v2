@@ -7,21 +7,21 @@ const HeroStyle = styled.div`
     position: relative;
 
     img {
-        max-width: 350px;
+        max-width: 400px;
         position: absolute;
-        top: 20%;
-        left: 10%;
+        top: 5%;
+        left: 15%;
         border-top: 10px solid white;
         border-right: 10px solid white;
         border-left: 10px solid white;
-        border-bottom: 80px solid white;
+        border-bottom: 100px solid white;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     }
 
     p {
         position: absolute;
-        top: 50%;
-        left: 45%;
+        top: 45%;
+        left: 50%;
         max-width: 400px;
         font-size: 16px;
         line-height: 28px;
@@ -49,8 +49,8 @@ const TypeWriter = styled.div`
     h1 {
         font-family: monospace;
         position: absolute;
-        top: 40%;
-        left: 45%;
+        top: 35%;
+        left: 50%;
         display: inline-block;
         overflow: hidden;
         letter-spacing: 2px;
@@ -70,7 +70,7 @@ class Hero extends Component {
         return (
             <HeroStyle>
                 <TypeWriter>
-                    <h1>> sandy cao</h1>
+                    <h1>> Sandy Cao</h1>
                 </TypeWriter>
                 <img 
                     style={{width: 500}}

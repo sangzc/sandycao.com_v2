@@ -19,7 +19,7 @@ class Work extends Component {
     render() {
         return (
             <WorkStyle className="Work">
-                <h2>work</h2>
+                <h2>Work.</h2>
                 <ProjectCard imgsrc={whatsappIMG} />
                 <ProjectCard />
                 <ProjectCard />
