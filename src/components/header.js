@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from "react-scroll";
 import styled from 'styled-components';
 
+import * as whatsappIMG from '../images/whatsapp.png';
+
 const HeaderLinkStyle = styled.div`
     font-family: monospace;
     position: absolute;
@@ -88,7 +90,8 @@ class Header extends Component {
                     </Link> 
                     <a 
                         className="navlink"
-                        href="">
+                        href={whatsappIMG}
+                    >
                         Resume. 
                     </a>
                 </HeaderLinkStyle>
