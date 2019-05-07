@@ -46,6 +46,34 @@ const ProjectCardStyle = styled.div`
             filter: none;
         }
     }
+
+    @media only screen and (min-width: 500px) and (max-width: 1150px) {
+        position: relative;
+        padding: 0;
+        height: 90vh;
+        #img-container {
+            top: 0px
+            margin: 10px;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            height: 50%;
+        
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        #img-container{
+            display: none;
+            img {
+                display: none;
+            }
+        }
+    }
 `
 
 class ProjectCard extends Component {
@@ -55,7 +83,13 @@ class ProjectCard extends Component {
                 <div id="img-container">
                     <img src={this.props.imgsrc} />
                 </div>
-                <ProjectCardInfo />
+                <ProjectCardInfo 
+                    title={this.props.title} 
+                    description={this.props.description}
+                    skills={this.props.skills}
+                    githubLink={this.props.githubLink}
+                    liveLink={this.props.liveLink}
+                />
             </ProjectCardStyle>
         );
     }

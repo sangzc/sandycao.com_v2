@@ -40,7 +40,8 @@ const ProjectCardInfoStyle = styled.div`
   #project-links {
     margin: 0px 40px;
 
-    button {
+    .button {
+      text-decoration: none;
       color: white;
       border-radius: 5px;
       padding: 15px 20px;
@@ -71,33 +72,106 @@ const ProjectCardInfoStyle = styled.div`
     }
   }
 
+  @media screen and (max-width: 1150px) and (min-width: 501px) {
+    width: 100%;
+    height: 50%;
+    margin: 0px;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+
+    #project-card-info-desc {
+      line-height: 1.5;
+      margin: 0px;
+    }
+
+    #project-links {
+      margin: 15px 0;
+
+      .button {
+        padding: 10px 10px;
+        margin: 0 15px 0 0 ;
+      }
+
+    }
+
+    #skills-container {
+      font-size: 12px;
+      margin: 0px;
+    }
+
+    #project-card-info-title {
+      margin: 0;
+      font-size: 18px;
+      padding: 0 0 10px;
+    }
+    
+    #project-card-info-desc {
+      margin: 0;
+      font-size: 12px;
+      padding: 0 0 10px;
+    }
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 12.5px;
+    #project-card-info-desc {
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    #project-links {
+      margin: 0px 20px;
+    }
+
+    #skills-container {
+      margin: 20px;
+    }
+
+    #project-card-info-title {
+      margin: 20px;
+    }
+
+    .button {
+      padding: 15px 20px;
+      margin: 0;
+    }
+  }
 `
 
 class ProjectCardInfo extends Component {
   render() {
+    
+    const {
+            title, 
+            description, 
+            skills,
+            githubLink,
+          } = this.props;
+    
+    const liveLink = (this.props.liveLink !== "") ? 
+      (<a href={this.props.liveLink} className="button" id="live-demo-btn">
+        Live Demo <FaExternalLinkAlt />
+      </a>) : "";
+    
     return (
       <ProjectCardInfoStyle>
-        <h1 id="project-card-info-title">Microblog</h1>
+        <h1 id="project-card-info-title">{title}</h1>
         <p id="project-card-info-desc">
-          Travel smarter by saving the places you want to go. This project was
-          an assignment given for an interview. The requirements were to build a
-          web-app that calls the Google Places API. It must include a map with
-          pins and a list of locations, with some interactivity between the two.
+          {description}
         </p>
         <div id="skills-container">
-          <div class="skill">HTML5</div>
-          <div class="skill">CSS3</div>
-          <div class="skill">JavaScript</div>
-          <div class="skill">ReactJS</div>
-          <div class="skill">Redux</div>
+          {skills.map(skill => <div className="skill">{skill}</div>)}
         </div>
         <div id="project-links">
-          <button id="live-demo-btn">
-            Live Demo <FaExternalLinkAlt />
-          </button>
-          <button id="view-src-btn">
+          {liveLink}
+          <a href={githubLink} className="button" id="view-src-btn">
             View Source <FaGithub />
-          </button>
+          </a>
         </div>
       </ProjectCardInfoStyle>
     )
