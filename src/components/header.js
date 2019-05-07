@@ -8,8 +8,37 @@ const HeaderLinkStyle = styled.div`
     top: 50%;
     right: -60px;
     transform: translate(-50%, -50%);
-    a {
-        padding: 15px;
+    .navlink {
+        margin: 15px;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        color: #000;
+    }
+
+    .navlink:hover {
+        color: rgba(136, 206, 194)
+    }
+
+    .navlink:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: orange;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .navlink:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
     }
 `
 
@@ -25,7 +54,7 @@ class Header extends Component {
         return (
             <HeaderStyle>
                 <HeaderLinkStyle>
-                    <Link 
+                    {/* <Link 
                         to="About"
                         activeClass="active"
                         spy={true}
@@ -34,14 +63,15 @@ class Header extends Component {
                         duration={500} 
                     >
                         About. 
-                    </Link> 
+                    </Link>  */}
                     <Link 
                         to="Work"
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={60}
                         duration={500} 
+                        className="navlink"
                     >
                         Work.
                     </Link> 
@@ -50,11 +80,17 @@ class Header extends Component {
                         activeClass="active"
                         spy={true}
                         smooth={true}
-                        offset={-70}
+                        offset={60}
                         duration={500} 
+                        className="navlink"
                     >
                         Contact. 
                     </Link> 
+                    <a 
+                        className="navlink"
+                        href="">
+                        Resume. 
+                    </a>
                 </HeaderLinkStyle>
             </HeaderStyle>
         );

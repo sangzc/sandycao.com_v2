@@ -28,9 +28,10 @@ const ProjectCardInfoStyle = styled.div`
   }
 
   .skill {
+    font-family: monospace;
     display: inline-block;
     border-radius: 5px;
-    background-color: rgb(136, 206, 194);
+    border: 2px solid rgb(136, 206, 194);
     margin: 5px 10px 5px 0px;
     padding: 8px;
   }
