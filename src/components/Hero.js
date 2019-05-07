@@ -56,7 +56,8 @@ const TypeWriter = styled.div`
         display: inline-block;
         overflow: hidden;
         letter-spacing: 2px;
-        animation: typing 5s steps(30, end), blink .75s step-end infinite;
+        max-width: 145px;
+        animation: typing 3s steps(22, end), blink .75s step-end infinite;
         white-space: nowrap;
         font-size: 20px;
         font-weight: 200;

@@ -8,14 +8,15 @@ const ProjectCardInfoStyle = styled.div`
   position: absolute;
   right: 0;
   padding: 20px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 100;
+  
 
   #project-card-info-title {
     margin: 40px 40px 20px 40px;
     font-weight: normal;
     font-family: monospace;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   #project-card-info-desc {
