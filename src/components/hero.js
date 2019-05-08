@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {MdPlace} from 'react-icons/md';
+import * as flossIMG from '../images/floss.jpg';
 
 const HeroStyle = styled.div`
     height: calc(100vh - 70px);
@@ -75,7 +76,7 @@ class Hero extends Component {
                 <ImageContainer>
                     <img 
                         style={{width: 500}}
-                        src="https://sandycao.com/images/flossin.JPG" 
+                        src={flossIMG} 
                         alt="sandy flossing"
                     />
                     <div>
