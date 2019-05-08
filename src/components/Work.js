@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import ProjectCard from './ProjectCard';
+import ProjectCard from './projectCard';
 import * as whatsappIMG from '../images/whatsapp.png';
 import * as sisIMG from '../images/sis-slack-integration.gif';
 import * as gotIMG from '../images/gotsite.gif';

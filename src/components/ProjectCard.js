@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import styled from 'styled-components';
-import ProjectCardInfo from './ProjectCardInfo';
+import ProjectCardInfo from './projectcardinfo';
 
 const ProjectCardStyle = styled.div`
     height: 70vh;
