@@ -7,17 +7,10 @@ const HeroStyle = styled.div`
     height: calc(100vh - 70px);
     width: 100vw;
     position: relative;
-
-    p {
-        position: absolute;
-        bottom 20px;
-        left: 15px;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: .5px;
-    }
 `
 const ImageContainer = styled.div`
+    top: 50%;
+    transform: translateY(-60%);
     height: 500px;
     width: 400px;
     position: relative;
@@ -28,6 +21,15 @@ const ImageContainer = styled.div`
 
     img {
         display: block;
+    }
+
+    p {
+        position: absolute;
+        bottom 20px;
+        left: 15px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: .5px;
     }
 `
 const TypeWriter = styled.div`
