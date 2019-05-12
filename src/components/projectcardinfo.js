@@ -72,7 +72,7 @@ const ProjectCardInfoStyle = styled.div`
     }
   }
 
-  @media screen and (max-width: 1150px) and (min-width: 501px) {
+  @media screen and (max-width: 1150px) and (min-width: 769px) {
     width: 100%;
     height: 50%;
     margin: 0px;
@@ -114,11 +114,14 @@ const ProjectCardInfoStyle = styled.div`
 
   }
 
-  @media only screen and (max-width: 500px) {
+  @media only screen and (max-width: 768px) {
     width: 100%;
     margin: 0px;
+    bottom: 0;
+    height: 50%;
     padding: 0px;
     font-size: 12.5px;
+
     #project-card-info-desc {
       line-height: 1.5;
       margin: 20px;

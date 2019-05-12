@@ -47,10 +47,11 @@ const ProjectCardStyle = styled.div`
         }
     }
 
-    @media only screen and (min-width: 500px) and (max-width: 1150px) {
+    @media only screen and (min-width: 769px) and (max-width: 1150px) {
         position: relative;
         padding: 0;
         height: 90vh;
+
         #img-container {
             top: 0px
             margin: 10px;
@@ -65,12 +66,20 @@ const ProjectCardStyle = styled.div`
         }
     }
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 768px) {
+        position: relative;
+        padding: 0;
+        height: 90vh;
 
-        #img-container{
-            display: none;
+        .img-container {
+            width: 100%;
+            height: 50%;
+            background-color: pink;
+        
             img {
-                display: none;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
         }
     }
@@ -80,7 +89,7 @@ class ProjectCard extends Component {
     render() {
         return (
             <ProjectCardStyle>
-                <div id="img-container">
+                <div className="img-container">
                     <img src={this.props.imgsrc} />
                 </div>
                 <ProjectCardInfo 
