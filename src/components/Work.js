@@ -29,7 +29,7 @@ const sis = {
     to be sent via HTTP Request calls to a custom Slack App triggered by a cronjob. 
     `,
     skills:["Python", "Django", "PostgreSQL", "cron"],
-    githubLink:"https://github.com/rithmschool/sis",
+    githubLink:"",
     liveLink:""
 }
 

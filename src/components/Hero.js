@@ -8,11 +8,12 @@ const HeroStyle = styled.div`
     width: 100vw;
     position: relative;
 `
+
 const ImageContainer = styled.div`
     top: 50%;
     transform: translateY(-60%);
-    height: 500px;
-    width: 400px;
+    height: 475px;
+    width: 350px;
     position: relative;
     margin: 0 auto;
     background-color: white;

@@ -8,7 +8,7 @@ const HeaderLinkStyle = styled.div`
     font-family: monospace;
     position: absolute;
     top: 50%;
-    right: -60px;
+    right: -70px;
     transform: translate(-50%, -50%);
     .navlink {
         margin: 15px;

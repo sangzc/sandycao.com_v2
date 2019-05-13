@@ -3,29 +3,27 @@ import styled from "styled-components"
 import {FaExternalLinkAlt, FaGithub} from 'react-icons/fa';
 
 const ProjectCardInfoStyle = styled.div`
-  height: 100%;
-  width: 60%;
-  position: absolute;
-  right: 0;
-  padding: 20px;
+  width: 100%;
+  padding: 15px;
   font-size: 14px;
   font-weight: 100;
-  
+  margin: 0px;
 
   #project-card-info-title {
-    margin: 40px 40px 20px 40px;
+    margin: 20px;
     font-weight: normal;
     font-family: monospace;
     font-size: 25px;
   }
 
   #project-card-info-desc {
-    margin: 20px 0px 20px 40px;
-    line-height: 28px;
+    margin: 20px;
+    line-height: 1.5;
+    // line-height: 28px;
   }
 
   #skills-container {
-    margin: 20px 40px 20px;
+    margin: 20px;
   }
 
   .skill {
@@ -38,14 +36,16 @@ const ProjectCardInfoStyle = styled.div`
   }
 
   #project-links {
-    margin: 0px 40px;
+    margin: 0px 20px;
 
     .button {
+      display: inline-block;
+      width: 140px;
       text-decoration: none;
       color: white;
       border-radius: 5px;
       padding: 15px 20px;
-      margin: 0 20px 0 0;
+      margin: 10px 20px 0 0;
       font-weight: normal;
       overflow: hidden;
       cursor: pointer;
@@ -72,93 +72,29 @@ const ProjectCardInfoStyle = styled.div`
     }
   }
 
-  @media screen and (max-width: 1150px) and (min-width: 769px) {
-    width: 100%;
-    height: 50%;
-    margin: 0px;
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-
-    #project-card-info-desc {
-      line-height: 1.5;
-      margin: 0px;
-    }
-
-    #project-links {
-      margin: 15px 0;
-
-      .button {
-        padding: 10px 10px;
-        margin: 0 15px 0 0 ;
-      }
-
-    }
-
-    #skills-container {
-      font-size: 12px;
-      margin: 0px;
-    }
-
-    #project-card-info-title {
-      margin: 0;
-      font-size: 18px;
-      padding: 0 0 10px;
-    }
+  @media screen and (min-width: 769px) {
     
-    #project-card-info-desc {
-      margin: 0;
-      font-size: 12px;
-      padding: 0 0 10px;
-    }
-
   }
 
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    margin: 0px;
-    bottom: 0;
-    height: 50%;
-    padding: 0px;
-    font-size: 12.5px;
-
-    #project-card-info-desc {
-      line-height: 1.5;
-      margin: 20px;
-    }
-
-    #project-links {
-      margin: 0px 20px;
-    }
-
-    #skills-container {
-      margin: 20px;
-    }
-
-    #project-card-info-title {
-      margin: 20px;
-    }
-
-    .button {
-      padding: 15px 20px;
-      margin: 0;
-    }
-  }
 `
 
 class ProjectCardInfo extends Component {
+
   render() {
-    
     const {
             title, 
             description, 
             skills,
-            githubLink,
           } = this.props;
     
     const liveLink = (this.props.liveLink !== "") ? 
       (<a href={this.props.liveLink} className="button" id="live-demo-btn">
         Live Demo <FaExternalLinkAlt />
+      </a>) : "";
+
+    const githubLink = (this.props.githubLink !== "") ? 
+      (<a href={this.props.githubLink} className="button" id="view-src-btn">
+        View Source <FaGithub />
       </a>) : "";
     
     return (
@@ -172,9 +108,7 @@ class ProjectCardInfo extends Component {
         </div>
         <div id="project-links">
           {liveLink}
-          <a href={githubLink} className="button" id="view-src-btn">
-            View Source <FaGithub />
-          </a>
+          {githubLink}
         </div>
       </ProjectCardInfoStyle>
     )
