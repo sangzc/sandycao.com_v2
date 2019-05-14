@@ -19,7 +19,6 @@ const ProjectCardInfoStyle = styled.div`
   #project-card-info-desc {
     margin: 20px;
     line-height: 1.5;
-    // line-height: 28px;
   }
 
   #skills-container {
@@ -73,7 +72,7 @@ const ProjectCardInfoStyle = styled.div`
   }
 
   @media screen and (min-width: 769px) {
-    
+
   }
 
 `

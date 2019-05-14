@@ -21,7 +21,7 @@ const WorkStyle = styled.div`
 const sis = {
     title:"SIS",
     description:`
-    SIS is a full CRUD student information system built with Django in the backend and PostgreSQL. 
+    SIS (Student Information System) is a full CRUD student information system built with Django in the backend and PostgreSQL. 
     In addition to helping the team make models, views, and unit tests in Django, 
     I worked on a integration with Slack to automatically send notifications containing 
     tomorrow's lectures, exercises and events to all cohorts. 

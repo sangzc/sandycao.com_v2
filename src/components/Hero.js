@@ -32,6 +32,16 @@ const ImageContainer = styled.div`
         line-height: 16px;
         letter-spacing: .5px;
     }
+
+    @media screen and (min-height: 0px) and (max-height: 570px) {
+        height: 290px;
+        width: 250px;
+        padding: 8px;
+        margin-top: 10px;
+        p {
+            display: none;
+        }
+    }
 `
 const TypeWriter = styled.div`
     @keyframes typing {
@@ -70,6 +80,11 @@ const TypeWriter = styled.div`
         letter-spacing: normal;
     }
 
+    @media screen and (min-height: 0px) and (max-height: 500px) {
+        h1{
+            bottom: 8px;
+        }
+    }
 `
 
 class Hero extends Component {

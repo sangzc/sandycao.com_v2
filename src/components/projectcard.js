@@ -21,7 +21,7 @@ const ProjectCardStyle = styled.div`
         filter: grayscale(100%) brightness(.9);
         transition: filter .4s;
         width: 100%;
-        height: 300px;
+        height: 50%;
         object-fit: cover;
     }
 
@@ -46,6 +46,15 @@ const ProjectCardStyle = styled.div`
     
     @media screen and (min-width: 1018px) {
         width: 55rem;
+        img {
+            height: 500px;
+        }
+    }
+
+    @media screen and (max-width: 650px){
+        img {
+            height: 250px;
+        }
     }
 
 `
