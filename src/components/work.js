@@ -4,6 +4,7 @@ import ProjectCard from './projectcard';
 import * as sisIMG from '../images/sis-slack-integration.gif';
 import * as gotIMG from '../images/gotsite.gif';
 import * as warblerIMG from '../images/warbler.gif';
+import * as joblyIMG from '../images/jobly.gif';
 
 const WorkStyle = styled.div`
     width: 100vw;
@@ -89,7 +90,7 @@ class Work extends Component {
                     skills={jobly.skills}
                     githubLink={jobly.githubLink}
                     liveLink={jobly.liveLink}
-                    titleimgsrc={warblerIMG}
+                    imgsrc={joblyIMG}
                 />
                 <ProjectCard 
                     title={warbler.title} 
