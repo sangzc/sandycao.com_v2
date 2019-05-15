@@ -16,12 +16,9 @@ const HeaderLinkStyle = styled.div`
     top: 50%;
     right: -70px;
     transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
 
     .navlink {
-        margin: auto;
+        margin: 15px;
         cursor: pointer;
         text-decoration: none;
         position: relative;
@@ -51,6 +48,15 @@ const HeaderLinkStyle = styled.div`
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        .navlink {
+            margin: auto;
+        }
     }
 `
 
