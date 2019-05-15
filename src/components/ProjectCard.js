@@ -5,7 +5,6 @@ import ProjectCardInfo from './projectcardinfo';
 
 const ProjectCardStyle = styled.div`
     width: 90%;
-    min-height: 80vh;
     margin: 120px auto;
     position: relative;
     display: flex;
@@ -21,7 +20,7 @@ const ProjectCardStyle = styled.div`
         filter: grayscale(100%) brightness(.9);
         transition: filter .4s;
         width: 100%;
-        height: 50%;
+        height: 40%;
         object-fit: cover;
     }
 
@@ -47,7 +46,7 @@ const ProjectCardStyle = styled.div`
     @media screen and (min-width: 1018px) {
         width: 55rem;
         img {
-            height: 500px;
+            height: 375px;
             filter: none;
         }
     }

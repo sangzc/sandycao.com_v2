@@ -50,10 +50,16 @@ const HeaderLinkStyle = styled.div`
         transform: scaleX(1);
     }
 
-    @media screen and (min-width: 0px) and (max-width: 500px) {
+    @media screen and (min-width: 0px) and (max-width: 650px) {
         display: flex;
         justify-content: space-around;
         width: 70%;
+        position: relative;
+        top: 30%;
+        right: 0;
+        transform: none;
+        width: 70%;
+        margin: 0 auto;
         .navlink {
             margin: auto;
         }
@@ -72,16 +78,6 @@ class Header extends Component {
         return (
             <HeaderStyle>
                 <HeaderLinkStyle>
-                    {/* <Link 
-                        to="About"
-                        activeClass="active"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500} 
-                    >
-                        About. 
-                    </Link>  */}
                     <Link 
                         to="Work"
                         activeClass="active"

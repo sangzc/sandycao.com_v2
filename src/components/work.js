@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import ProjectCard from './projectcard';
-import * as whatsappIMG from '../images/whatsapp.png';
 import * as sisIMG from '../images/sis-slack-integration.gif';
 import * as gotIMG from '../images/gotsite.gif';
+import * as warblerIMG from '../images/warbler.gif';
 
 const WorkStyle = styled.div`
     width: 100vw;
@@ -89,7 +89,7 @@ class Work extends Component {
                     skills={jobly.skills}
                     githubLink={jobly.githubLink}
                     liveLink={jobly.liveLink}
-                    titleimgsrc={whatsappIMG}
+                    titleimgsrc={warblerIMG}
                 />
                 <ProjectCard 
                     title={warbler.title} 
@@ -97,7 +97,7 @@ class Work extends Component {
                     skills={warbler.skills}
                     githubLink={warbler.githubLink}
                     liveLink={warbler.liveLink}
-                    imgsrc={whatsappIMG}
+                    imgsrc={warblerIMG}
                 />
                 <ProjectCard 
                     title={memorygame.title} 
