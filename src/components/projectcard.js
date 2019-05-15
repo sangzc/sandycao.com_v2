@@ -48,12 +48,14 @@ const ProjectCardStyle = styled.div`
         width: 55rem;
         img {
             height: 500px;
+            filter: none;
         }
     }
 
     @media screen and (max-width: 650px){
         img {
             height: 250px;
+            filter: none;
         }
     }
 

@@ -3,6 +3,12 @@ import { Link } from "react-scroll";
 import styled from 'styled-components';
 
 import * as whatsappIMG from '../images/whatsapp.png';
+const RESUME_LINK = `
+https://docs.google.com/viewer?url=
+https://docs.google.com/document/d/
+1ugpZ-7lF-vBtvHGnfHgHEL-Lky5z8Xiu4JMptxNkJak/
+export?format=pdf&embedded=true#:0.page.1
+`
 
 const HeaderLinkStyle = styled.div`
     font-family: monospace;
@@ -90,7 +96,8 @@ class Header extends Component {
                     </Link> 
                     <a 
                         className="navlink"
-                        href={whatsappIMG}
+                        target="_blank"
+                        href={RESUME_LINK}
                     >
                         Resume. 
                     </a>
