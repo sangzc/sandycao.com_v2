@@ -16,8 +16,12 @@ const HeaderLinkStyle = styled.div`
     top: 50%;
     right: -70px;
     transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
     .navlink {
-        margin: 15px;
+        margin: auto;
         cursor: pointer;
         text-decoration: none;
         position: relative;
