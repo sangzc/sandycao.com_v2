@@ -1,3 +1,0 @@
-# Redirects from what the browser requests to what we serve
-/home              /
-/bml               https://docs.google.com/spreadsheets/d/19mSMeHP9-vHFgwSARDykeJem_rf5GRbPg4jXSLMxwPA/edit?usp=sharing
